@@ -1,3 +1,7 @@
-function parsePartCode(params) {
+let productInfo = {
+    supplierCode:
+}
+
+function parsePartCode() {
     
 }

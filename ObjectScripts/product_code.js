@@ -1,13 +1,18 @@
 let productInfo = {
-    supplierCode:
+    supplierCode: "ttt:tyh-h"
 }
 
 function parsePartCode(code) {
-    let partCode = {};
+    let partCode = ("ttt:tyh-h");
     const colon = code.indexOf(":");
     const dash = code.indexOf("-");
 
-    partCode.supplierCode = b;
-    partCode.productNumber = b;
-    partCode.size = b;
+    partCode.supplierCode = code.substring(0, colon);
+    partCode.productNumber = code.substring(colon + 1, dash);
+    partCode.size =  code.substring(dash + 1);
+
+    return partCode
+   
+
 }
+console.log(partCode.size);
